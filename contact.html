@@ -1,107 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Contact</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-</head>
-<body>
-    <header>
-        <div class="presentation">
-            <img src="src/img/jarditou_logo.jpg" alt="Logo jarditou" style="width:20%;">
-    
-        <h1 id="jardin">La qualité depuis 70 ans</h1>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container"> 
+        <div class="row">
+            <div class="col-3">
+                <img class="img-fluid" src="src/img/jarditou_logo.jpg" alt="jarditouLogo">
+            </div> 
+        <div class="col-9 fs-1 text-end ">Tout le jardin</div>
+     </div>
     </div>
-    </header>
-    <nav>
-            <div class="navi">
-                <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="tableau.html">Tableau</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-            </div>
-    </nav>
-    <img src="src/img/promotion.jpg" class="promotion" alt="Promotion">
-    <h1>Contact</h1>
-<section>
-   
-<fieldset class="formulaire">
-        <form id="form" action="http://bienvu.net/script.php" method="post">
-    <div>*Ces zones sont obligatoires</div>
-    <fieldset>
-    <legend>Vos coordonnées</legend>
-    <label for="nom">Votre nom*:</label>
-     <input id="nom" type="text"  name="nom">
-     <span id="nomManquant"></span>
-    <br>
-    <label for="prenom">Votre prénom*:</label> 
-    <input id="prenom" type="text" required name="prenom">
-    <span id="prenomManquant"></span>
-    <br>
-    <label for="sexeF">Sexe*:</label>
-    <input id="sexeF" type="radio" name="sexe" required value="Féminin">Féminin 
-    <input id="sexeM" type="radio" name="sexe" required value="Masculin">Masculin
-    <br>
-    <label for="date">Date de naissance*:</label>
-    <input id="date" name="date" required type="date">
-    <span id="dateManquant"></span>
-    <br>
-    <label  for="codep">Code postale*:</label>
-    <input id="codep" name="code" required type="text">
-    <span id="codepManquant"></span>
-    <br>
-    <label for="adresse">Adresse</label>
-    <input id="adresse" name="adresse" required type="text">
-    <span id="adresseManquant"></span>
-    <br>
-    <label for="ville">Ville :</label>
-    <input id="ville" name="ville" type="text" required>
-    <span id="villeManquant"></span>
-    <br>
-    <label for="mail">Email*:</label>
-    <input id="mail" name="mail" type="email" required placeholder="dave.loper@afpa.fr">
-    <span id="mailManquant"></span>
-</fieldset>
-    <fieldset>
-    <legend>Votre demande</legend>
-    <label for="sujet">Sujet*:</label>
-        <select required size="1" id="sujet">
-            <option value="" selected>Veuillez séléctionner un sujet</option>
-            <option value="Mes commandes">Mes commandes</option>
-            <option value="Question sur un produit">Question sur un produit</option>
-            <option value="Réclamation">Réclamation</option>
-            <option value="Autres">Autres</option>
-        </select>
-    <br>
-    <label for="question">Votre question*:</label> <textarea required name="question" cols="18" rows="2" id="question"></textarea>
-    </fieldset>
-    <input id="formulaire" required type="checkbox"> <label for="formulaire">* J'accepte le traitement informatique de ce formulaire</label>
-    <br>
-    <div>
-    <input type="submit" value="Envoyer" id="boutonEnvoi">
-    <input type="reset" value="Annuler">
-    </div>
-</form>
-</fieldset>
-</section>
-<footer>
-        <div class="navi">
-            <ul>
-        <li><a href="">Mentions légales</a></li>
-        
-        <li><a href="">Horaires</a></li>
-        
-        <li><a href="">Plan du site</a></li>
-    </ul>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Jarditou.com</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tableau.html">Tableau</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
         </div>
-</footer>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="/assets/js/script.js"></script>
+    </nav>
+    <div class="mx-auto">
+      <img src="src/img/promotion.jpg" class="img-fluid" alt="imgPromotion">
+    </div>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
